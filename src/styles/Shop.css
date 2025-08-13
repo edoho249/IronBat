@@ -1,6 +1,111 @@
-main{ text-align:center;}
+main{ text-align:center;
 
+}
+
+.card-body{
+    text-align:center;
+}
 
 .card.product { 
     cursor:pointer
  }
+
+
+
+ .heart-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 1.4rem;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 5px;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.heart-btn.hearted {
+  color: red;
+}
+
+.heart-btn:hover {
+  transform: scale(1.2);
+}
+
+.shop-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.buy-btn, .cart-btn {
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.buy-btn {
+  background: #28a745;
+  color: white;
+}
+
+.cart-btn {
+  background: #007bff;
+  color: white;
+}
+
+.flying-img {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  border-radius: 6px;
+  transition: all 0.7s ease-in-out;
+  z-index: 2000;
+  pointer-events: none;
+}
+
+
+
+.card-foot {
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  gap: 10px;              
+}
+
+.cart-btn {
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #61dafb;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cart-btn:hover {
+  background-color: #21a1f1;
+}
+
+.buttons-wrapper {
+  display: flex;
+  justify-content: center; 
+  gap: 10px;             
+}
+
+.details-btn {
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffcc00;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.details-btn:hover {
+  background-color: #e6b800;
+}

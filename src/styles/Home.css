@@ -1,4 +1,9 @@
 
+.home-section .container {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 
 .hero-copy {
   max-width: 500px; 
@@ -144,7 +149,7 @@
 .news-form input {
   flex: 1 1 250px;
   padding: 0.75rem 1rem;
-  border: 1px solid #ccc;
+  border: 3px solid #ffcc00;
   border-radius: 6px;
   font-size: 1rem;
 }
@@ -215,28 +220,31 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(255,255,255,0.8);
+  background: rgba(255, 255, 255, 0.8);
   border: none;
-  font-size: 2rem;
-  padding: 10px 14px;
+  font-size: 1.5rem; 
+  font-weight: bold; 
+  padding: 8px; 
   cursor: pointer;
-  border-radius: 50%;
+  border-radius: 50%; 
   user-select: none;
   transition: background 0.3s ease;
   z-index: 10;
 }
 
 .arrow:hover {
-  background: rgba(255,255,255,1);
+  background: rgba(255, 255, 255, 1);
 }
 
 .arrow.left {
-  left: -5px;
+  left: 10px;
 }
 
 .arrow.right {
-  right: -5px;
+  right: 10px; 
 }
+
+
 
 
 
