@@ -1,0 +1,253 @@
+
+
+.hero-copy {
+  max-width: 500px; 
+    text-align: center;
+}
+
+
+
+.hero-copy h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem; 
+}
+
+.hero-copy .lead {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #cbd5e0;
+  margin-bottom: 1.5rem;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 15px; 
+  flex-wrap: wrap; 
+  margin-bottom: 2rem; 
+}
+
+.hero-cta .btn {
+  padding: 0.7rem 1.4rem;
+  font-size: 1rem;
+}
+
+.stats-row {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat strong {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.stat span {
+  font-size: 0.9rem;
+  color: #a0aec0;
+}
+
+
+.btn {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  transition: color 0.4s ease;
+}
+
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0; left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #61dafb, #21a1f1);
+  transition: left 0.4s ease;
+  z-index: -1;
+}
+
+.btn:hover::before {
+  left: 0;
+}
+
+.btn.primary:hover {
+  color: #0d1b2a;
+}
+
+.btn.ghost::before {
+  background: linear-gradient(90deg, #fff, #cbd5e0);
+}
+
+.btn.ghost:hover {
+  color: #0d1b2a;
+}
+
+.hero-copy {
+  text-align: center; 
+  max-width: 500px;   
+  margin: 0 auto;    
+}
+
+.hero-cta {
+  display: inline-flex;  
+  gap: 15px;          
+  justify-content: center; 
+  margin-bottom: 2rem;   
+}
+
+.stats-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center; 
+}
+
+
+#newsletter {
+  text-align: center;
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+#newsletter .section-title {
+  margin-bottom: 0.5rem;
+}
+
+#newsletter .muted {
+  color: #718096;
+  margin-bottom: 1.5rem;
+}
+
+.news-form {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.news-form input {
+  flex: 1 1 250px;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.news-form button {
+  padding: 0.75rem 1.8rem;
+  font-size: 1rem;
+}
+
+
+.fc-actions{
+  gap:10px;
+  display:flex;
+  justify-content:center;
+}
+
+.fc-body{
+  text-align:center;
+}
+
+.carousel-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 20px 40px; 
+  color:black;
+}
+
+.carousel-slide {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.review-card {
+  flex: 0 0 calc(100% / 4 - 15px); 
+  max-width: 100%;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  background: #fff;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+  transform: scale(1.05);
+}
+
+.review-face {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover; 
+  margin-bottom: 12px;
+  transition: transform 0.3s ease;
+}
+
+
+.review-card:hover .review-face {
+  transform: scale(1.1);
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255,255,255,0.8);
+  border: none;
+  font-size: 2rem;
+  padding: 10px 14px;
+  cursor: pointer;
+  border-radius: 50%;
+  user-select: none;
+  transition: background 0.3s ease;
+  z-index: 10;
+}
+
+.arrow:hover {
+  background: rgba(255,255,255,1);
+}
+
+.arrow.left {
+  left: -5px;
+}
+
+.arrow.right {
+  right: -5px;
+}
+
+
+
+@media (max-width: 1023px) and (min-width: 768px) {
+  .review-card {
+    flex: 0 0 calc(50% - 15px); 
+  }
+}
+
+@media (max-width: 767px) {
+  .review-card {
+    flex: 0 0 100%; 
+  }
+}
